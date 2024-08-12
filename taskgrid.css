@@ -1,0 +1,591 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "i-phone i-phone i-phone i-phone i-phone i-phone LEARN-MORE LEARN-MORE LEARN-MORE LEARN-MORE LEARN-MORE LEARN-MORE"
+        "Keyboard Keyboard Keyboard tv tv tv tv tv tv i-cloud i-cloud i-cloud"
+        "Games Games Games tap tap tap tap tap tap i-cloud i-cloud i-cloud"
+        "Twitter Twitter Twitter POPULAR POPULAR POPULAR vision vision vision vision vision vision";
+
+}
+
+
+.i-phone {
+    grid-area: i-phone;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.i-phone img {
+    width: 30%;
+    margin-top: 50px;
+}
+
+.i-phone .text {
+    color: #333;
+
+
+}
+
+.i-phone .text p {
+    margin-bottom: 20px;
+    color: #9fa3a7;
+}
+
+.i-phone .text h3 {
+    font-family: 'Arvo', serif;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.LEARN-MORE {
+    display: flex;
+    background-color: #f7f8f9;
+    grid-area: LEARN-MORE;
+    align-items: center;
+    justify-content: center;
+}
+
+.LEARN-MORE .caption {
+    text-align: center;
+
+}
+
+.caption p {
+    color: #9fa3a7;
+    margin-bottom: 20px;
+
+}
+
+.caption h1 {
+    line-height: 60px;
+    font-family: 'Arvo', serif;
+    font-weight: normal;
+    font-size: 48px;
+
+}
+
+.caption a {
+    color: #27b9c2;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+.Keyboard {
+    display: flex;
+    grid-area: Keyboard;
+    flex-direction: column;
+    background-color: #f05638;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 1;
+}
+
+.Keyboard img {
+
+    width: 300px;
+
+    margin: auto;
+}
+
+.Keyboard h3 {
+    color: white;
+    line-height: 30px;
+    font-size: 22px;
+    font-family: 'Arvo', serif;
+
+}
+
+.Keyboard a {
+    color: #ffc80a;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.tv {
+    display: flex;
+    grid-area: tv;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.one img {
+    width: 350px;
+    position: absolute;
+    left: -44px;
+    bottom: 0;
+
+}
+
+.one {
+
+    width: 40%;
+    margin-bottom: 200px;
+}
+
+.one p {
+    color: #9fa3a7;
+    margin-bottom: 10px;
+}
+
+.one h3 {
+    font-family: 'Arvo', serif;
+    font-weight: normal;
+    line-height: 30px;
+
+}
+
+.two {
+    color: #9fa3a7;
+    width: 40%;
+    margin-bottom: 133px;
+}
+
+
+.two a {
+    color: #27b9c2;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.i-cloud {
+    display: flex;
+    grid-area: i-cloud;
+    background-color: #8f76bc;
+    position: relative;
+    flex-direction: column;
+}
+
+.imgicloud {
+    background-color: #8166B0;
+    width: 370px;
+    height: 370px;
+    margin-top: 70px;
+    border-radius: 150%;
+
+    position: relative;
+
+}
+
+.imgicloud img {
+    width: 250px;
+    position: absolute;
+    margin: 60px;
+}
+
+
+
+.shape {
+
+    position: relative;
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: #9576b3;
+    color: white;
+    position: absolute;
+    /* left: 133px; */
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+
+}
+
+
+.shape img {
+    width: 15px;
+    margin-top: 20px;
+    margin: auto;
+
+}
+
+
+.shape h6 {
+    margin-left: 20px;
+}
+
+.itext {
+
+    margin-left: 7px;
+    text-align: center;
+    margin-bottom: 200px;
+
+}
+
+.itext h3 {
+    color: white;
+    font-size: 32px;
+    margin: 20px;
+}
+
+.itext p {
+    color: white;
+    font-family: 'Arvo', serif;
+    line-height: 30px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.itext a {
+    color: #333;
+    padding: 14px 28px;
+    border-radius: 50px;
+    background-color: #ffc80a;
+    margin-top: 30px;
+    letter-spacing: 2.4px;
+    margin-bottom: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Games {
+    display: flex;
+    grid-area: Games;
+    background-color: white;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+.Games img {
+    width: 290px;
+    margin-top: 40px;
+}
+
+.textgame {
+    margin: auto;
+    font-family: 'Arvo', serif;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 2.4px;
+    color: #333;
+
+}
+
+.textgame h3 {
+    margin: 20px;
+    font-size: 29px;
+}
+
+.textgame a {
+    color: #27b9c2;
+    margin: 20px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tap {
+    display: flex;
+    grid-area: tap;
+    background-color: #93b6b7;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+}
+
+.tap img {
+    /* width: 650px; */
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    right: 0;
+}
+.tap img {width: 100%;
+}
+.tap p {
+    background-color: #fa684f;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 20px;
+    font-size: 8px;
+}
+
+.tap h3 {
+    margin: auto;
+    margin-top: 21px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Arvo', serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Twitter {
+    display: flex;
+    grid-area: Twitter;
+    background-color: #48cae5;
+    flex-direction: column;
+
+}
+
+.imgtwitter {
+    background-color: #38d5f4;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+
+}
+
+.imgtwitter img {
+    width: 50px;
+    margin-top: 33px;
+    margin-left: 75px;
+}
+
+.textx h3 {
+    color: white;
+    margin-top: -140px;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    line-height: 32px;
+    font-weight: 400;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.POPULAR {
+    display: flex;
+    grid-area: POPULAR;
+    background-color: white;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.POPULAR p {
+    background-color: #7bc424;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 20px;
+    font-size: 8px;
+    text-align: center;
+    margin-left: 60px;
+
+}
+
+.POPULAR h3 {
+    font-family: 'Arvo', serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.vision {
+    display: flex;
+    grid-area: vision;
+    background-color: #333;
+}
+
+.vision img {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.vision h3 {
+    margin: auto;
+    color: white;
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+@media (max-width:800px) {
+    .container {
+        grid-template-areas:
+            "i-phone "
+            "LEARN-MORE "
+            "Keyboard"
+            "tv"
+            "i-cloud"
+            "Games"
+            "tap"
+            "Twitter"
+            "POPULAR"
+            "vision";
+    }
+
+    .i-phone {
+        flex-direction: column;
+    }
+
+    .i-phone img {
+        width: 70%;
+    }
+
+    .caption p {
+        margin-top: 20px;
+    }
+
+    .caption a {
+        margin-bottom: 70px;
+
+    }
+
+    .caption h1 {
+        font-size: 30px;
+    }
+
+    .tv .one {
+        width: 50%;
+    }
+
+    .tv .two {
+        width: 50%;
+    }
+
+    .tv .one img {
+        position: absolute;
+        left: -94px;
+        bottom: 0;
+    }
+
+    .tap .tap img {
+        width: px;
+    }
+
+    .tap .tap img {
+        width: 100%;
+    }
+    .imgtwitter img {
+        margin-top: 20px;
+
+} 
+.vision img {margin-left:-38px ;
+}
+
+}
